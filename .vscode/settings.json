@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "__split_buffer": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "deque": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
