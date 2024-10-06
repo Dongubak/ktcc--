@@ -1,10 +1,10 @@
+// string 객체 사용
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main()
 {
-    using namespace std;
     string word;
     int count = 0;
 
@@ -17,4 +17,5 @@ int main()
             break;
         ++count;
     }
+    cout << count <<"\n" ;
 }
