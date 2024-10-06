@@ -14,14 +14,14 @@ int main()
 	
 	for (int i = 0; i < year; i++)
 	{
-		cout << i + 1 << "차 년도" << "\n";
+		cout << i + 1 << "년차" << "\n";
 		for (int j = 0; j < month; j++)
 		{
 			cout << MonthName[j] << " 판매량: ";
 			cin >> MonthSale[i][j];
 			sum[i] += MonthSale[i][j];
 		}
-		cout << i + 1 << "차 년도 판매량: " << sum[i] << "\n";
+		cout << i + 1 << " 1년차 판매량: " << sum[i] << "\n";
 	}
 	
 	for (i = 0; i < year; i++)

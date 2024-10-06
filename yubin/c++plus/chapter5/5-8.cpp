@@ -2,16 +2,15 @@
 
 #include <iostream>
 #include <cstring>   
-
+using namespace std;;
 int main()
 {
-	using namespace std;;
 	char word[100];
 	int count = 0;
 
 	cout << "영어 단어들을 입력하십시오(끝내려면 done을 입력):\n";
 
-	while (true)
+	while (1)
     {
         cin >> word;
         if (strcmp(word, "done") == 0)
