@@ -19,7 +19,7 @@ int main()
 	{
 		cout << "자동차 #" << i + 1 << "\n";
 		cout << "제작업체: ";
-		cin.getline(CarList[i].Maker, 20);
+		cin.getline(CarList[i].Maker, 20); 
 		cout << "제작연도: ";
 		(cin >> CarList[i].Production_year).get();
 	}
