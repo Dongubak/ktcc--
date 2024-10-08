@@ -31,3 +31,9 @@ int main()
 	}
 	return 0;
 }
+
+int rows,  cols;
+char **arr =new *month[rows];
+for (int i= 0; i<rows; i++){
+	arr[i] = new month[cols]; 
+}
