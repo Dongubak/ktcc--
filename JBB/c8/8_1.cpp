@@ -2,11 +2,11 @@
 #include <string>
 using namespace std;
 
-void printPhrase(string phr, int condition = 0) {
+void printLine(string phr, int con = 0) {
     static int call = 0;
     call++;
 
-    if (condition) {
+    if (con) {
         for (int i = 0; i < call; ++i) {
             cout << phr << '\n';
         }
@@ -16,8 +16,8 @@ void printPhrase(string phr, int condition = 0) {
 }
 
 int main() {
-    printPhrase("Hello, World!");
-    printPhrase("Hello, World!", 1);
-    printPhrase("Hello, World!", 1);  
+    printLine("Hello, World!");
+    printLine("Hello, World!", 1);
+    printLine("Hello, World!", 1);  
     return 0;
 }

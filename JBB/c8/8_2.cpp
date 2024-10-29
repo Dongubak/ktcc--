@@ -8,10 +8,10 @@ struct CandyBar {
     int calories;
 };
 
-void setCandyBar(CandyBar& candy, const char* brand = "Millennium Munch", double weight = 2.85, int calories = 350) {
-    candy.brand = brand;
-    candy.weight = weight;
-    candy.calories = calories;
+void setCandyBar(CandyBar& candy, const char* aBrand = "Millennium Munch", double aWeight = 2.85, int aCalories = 350) {
+    candy.brand = aBrand;
+    candy.weight = aWeight;
+    candy.calories = aCalories;
 }
 
 void displayCandyBar(CandyBar& candy) {
