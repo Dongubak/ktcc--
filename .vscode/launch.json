@@ -1,18 +1,13 @@
 {
-    "configurations": [
-        {
-            "name": "C/C++: g++ 활성 파일 빌드 및 디버그",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: g++ 활성 파일 빌드"
-        }
-    ],
-    "version": "2.0.0"
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/yubin/Documents/GitHub/ktcc--/yubin/c++plus/chapter9/9-1",
+      "program": "/Users/yubin/Documents/GitHub/ktcc--/yubin/c++plus/chapter9/9-1/build/Debug/outDebug"
+    }
+  ]
 }
