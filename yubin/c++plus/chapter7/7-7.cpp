@@ -1,15 +1,17 @@
 // fill_array는 배열의 마지막 원소의 주소를 전달받고, 나머지는 배멸 원소의 포인터를 매개변수로 받음.
 #include <iostream>
+#include <vector>
+#define it vector<double>::iterator
 using namespace std;
-const int Max = 5;
+const int MAX = 5;
 
 
-double * fill_array(double * begin, double * end)
+it fill_array(it begin, it end)
 {
 	double temp;
-	double * pt;
+	it pt;
 	int i = 0;
-	for (pt = begin; pt < end; pt++)
+	for (pt = begin; pt != end; pt++)
 	{
 		cout  << ++i << "번 부동산의 가격: $";
 		cin >> temp;
@@ -28,9 +30,9 @@ double * fill_array(double * begin, double * end)
 	return pt;
 }
 
-void show_array(const double * begin, const double * end)
+void show_array(const it begin, const it end)
 {
-	const double * pt;
+	it pt;
 	int i = 0;
 	for (pt = begin; pt != end; pt++)
 	{
@@ -39,9 +41,9 @@ void show_array(const double * begin, const double * end)
 	}
 }
 
-void revalue(double * begin, double * end)
+void revalue(it begin, it end)
 {
-	double * pt;
+	it pt;
 	cout << "재평가율을 입력하십시오: ";
 	double factor;
 	cin >> factor;
@@ -51,12 +53,12 @@ void revalue(double * begin, double * end)
 
 int main()
 {
-	double properties[Max];
+	vector<double> properties(MAX, 0);
 
-	double * end = fill_array(properties, properties + Max);
-	show_array(properties, end);
-	revalue(properties, end);
-	show_array(properties, end);
+	it end = fill_array(properties.begin(), properties.end());
+	show_array(properties.begin(), end);
+	revalue(properties.begin(), end);
+	show_array(properties.begin(), end);
 	cout << "프로그램을 종료합니다.\n";
 	return 0;
 }
