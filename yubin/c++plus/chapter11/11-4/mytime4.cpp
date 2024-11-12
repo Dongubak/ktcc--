@@ -1,3 +1,4 @@
+// mytime4.cpp  -- Time 클래스의 메서드 정의
 #include "mytime4.h"
 
 Time::Time()

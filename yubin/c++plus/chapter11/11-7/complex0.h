@@ -5,8 +5,8 @@ using namespace std;
 class complex
 {
 private:
-	double real;
-	double imaginary;
+	double real; //실수
+	double imaginary; //허수
 public:
 	complex(double Re = 0.0, double Im = 0.0);
 	~complex() {};
