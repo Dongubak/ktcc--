@@ -1,4 +1,4 @@
-// 와인 정보가 담겨있는 객체.
+// 와인 정보가 담겨있는 객체. 빼먹은 정의들을 수정하고, 와인객체들을 출력하며 연산자 사용
 #include <iostream>
 using namespace std;
 // Port 기초 클래스
