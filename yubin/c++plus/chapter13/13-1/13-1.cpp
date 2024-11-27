@@ -1,4 +1,3 @@
-// pe13-01.cpp -- 13장 프로그래밍 연습 1 테스트 프로그램
 #include <iostream>
 #include "classic.h"
 using namespace std;
