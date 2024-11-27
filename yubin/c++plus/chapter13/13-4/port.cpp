@@ -104,13 +104,3 @@ ostream & operator<<(ostream & os, const VintagePort & vp)
 	return os;
 }
 
-// (a) 완성된 코드를 참고하라.
-//
-// (b) BottleCount()는 Port와 VintagePort에서 동일하므로 다시 정의할 필요가 없다.
-//     operator+=()와 operator-=()도 두 클래스에서 동일하므로 다시 정의할 필요가 없다.
-//     Show()는 두 클래스에서 다른 버전이 사용되므로 다시 정의되어야 한다.
-//
-// (c) operator=()과 operator<<()는 참조나 포인터에 기초하여 적당한 버전을 호출하지 않고
-//     객체에 기초하여 적당한 버전을 호출되므로 가상으로 선언하면 안 된다.
-//
-// (d) 완성된 코드를 참고하라.

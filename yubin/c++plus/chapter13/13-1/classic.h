@@ -15,7 +15,7 @@ public:
 	Cd & operator=(const Cd & d);
 };
 
-// Cd 클래스로부터 파생시킨 Classic 클래스
+
 class Classic : public Cd
 {
 private:
