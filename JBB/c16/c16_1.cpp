@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool isPalindrome(const string & str){
+bool isPalindrome(const string& str){
 	string rv = str;
 	reverse(rv.begin(),rv.end());
 	

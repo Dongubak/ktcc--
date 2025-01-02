@@ -10,7 +10,7 @@ int main()
 {
     using namespace std;
 
-    vector<string>wordlist;
+    vector<string> wordlist;
     const int SIZE = 60;
     const char filename[SIZE] = "words.txt";
     ifstream inFile; inFile.open(filename);
@@ -24,8 +24,8 @@ int main()
     while(inFile >> wrd){
       wordlist.push_back(wrd);
     }
-    
     inFile.close();
+    
     int numWords = wordlist.size();
 
     std::srand(std::time(0));
@@ -61,13 +61,12 @@ int main()
             {
                 cout << "Oh, bad guess!\n";
                 --guesses;
-                badchars += letter; // add to string
+                badchars += letter;
             }
             else
             {
                 cout << "Good guess!\n";
                 attempt[loc] = letter;
-                // check if letter appears again
                 loc = target.find(letter, loc + 1);
                 while (loc != string::npos)
                 {

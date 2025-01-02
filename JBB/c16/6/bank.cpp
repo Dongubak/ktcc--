@@ -6,7 +6,11 @@
 
 
 const int MIN_PER_HR = 60;
-bool newcustomer(double x);
+
+bool newcustomer(double x)
+{
+    return (std::rand() * x / RAND_MAX < 1);
+}
 
 int main()
 {
@@ -88,10 +92,4 @@ int main()
     cout << "Done!\n";
 
     return 0;
-}
-
-
-bool newcustomer(double x)
-{
-    return (std::rand() * x / RAND_MAX < 1);
 }
