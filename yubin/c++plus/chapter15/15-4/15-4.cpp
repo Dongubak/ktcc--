@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-  
+
 
     double vals1[12] =
     {
